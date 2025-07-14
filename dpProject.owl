@@ -1,0 +1,185 @@
+Prefix(:=<http://www.digitalproviderProject.com/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.digitalproviderProject.com>
+Annotation(rdfs:comment "This ontology defines the core concepts and relationships involved in managing digital service providers."@en)
+
+Declaration(Class(<http://www.digitalproviderProject.com#Agri>))
+Declaration(Class(<http://www.digitalproviderProject.com#Business>))
+Declaration(Class(<http://www.digitalproviderProject.com#Community>))
+Declaration(Class(<http://www.digitalproviderProject.com#Customer>))
+Declaration(Class(<http://www.digitalproviderProject.com#DigitalProvider>))
+Declaration(Class(<http://www.digitalproviderProject.com#Edu>))
+Declaration(Class(<http://www.digitalproviderProject.com#Entertain>))
+Declaration(Class(<http://www.digitalproviderProject.com#Farmer>))
+Declaration(Class(<http://www.digitalproviderProject.com#Med>))
+Declaration(Class(<http://www.digitalproviderProject.com#Private>))
+Declaration(Class(<http://www.digitalproviderProject.com#Project>))
+Declaration(Class(<http://www.digitalproviderProject.com#Public>))
+Declaration(Class(<http://www.digitalproviderProject.com#SME>))
+Declaration(Class(<http://www.digitalproviderProject.com#TechCat>))
+Declaration(Class(<http://www.digitalproviderProject.com#TechProduct>))
+Declaration(Class(<http://www.digitalproviderProject.com#Travel>))
+Declaration(ObjectProperty(<http://www.digitalproviderProject.com#buyProduct>))
+Declaration(ObjectProperty(<http://www.digitalproviderProject.com#developedBy>))
+Declaration(ObjectProperty(<http://www.digitalproviderProject.com#hasCategory>))
+Declaration(ObjectProperty(<http://www.digitalproviderProject.com#hasProduct>))
+Declaration(ObjectProperty(<http://www.digitalproviderProject.com#hasProject>))
+Declaration(DataProperty(<http://www.digitalproviderProject.com#customerName>))
+Declaration(DataProperty(<http://www.digitalproviderProject.com#productName>))
+Declaration(DataProperty(<http://www.digitalproviderProject.com#projectName>))
+Declaration(DataProperty(<http://www.digitalproviderProject.com#providerName>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.digitalproviderProject.com#buyProduct> (<http://www.digitalproviderProject.com#buyProduct>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#buyProduct> "A property used to indicate that a customer has purchased or adopted a specific technology product."@en)
+SubObjectPropertyOf(<http://www.digitalproviderProject.com#buyProduct> owl:topObjectProperty)
+
+# Object Property: <http://www.digitalproviderProject.com#developedBy> (<http://www.digitalproviderProject.com#developedBy>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#developedBy> "A property used to link a technology product to the digital provider who developed or produced it."@en)
+SubObjectPropertyOf(<http://www.digitalproviderProject.com#developedBy> owl:topObjectProperty)
+
+# Object Property: <http://www.digitalproviderProject.com#hasCategory> (<http://www.digitalproviderProject.com#hasCategory>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#hasCategory> "A property used to associate a technology product with its corresponding technology category (e.g., Agri, Travel, Edu)."@en)
+SubObjectPropertyOf(<http://www.digitalproviderProject.com#hasCategory> owl:topObjectProperty)
+
+# Object Property: <http://www.digitalproviderProject.com#hasProduct> (<http://www.digitalproviderProject.com#hasProduct>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#hasProduct> "A property used to link a technology category or a customer to the technology products that belong to or are used by them."@en)
+SubObjectPropertyOf(<http://www.digitalproviderProject.com#hasProduct> owl:topObjectProperty)
+
+# Object Property: <http://www.digitalproviderProject.com#hasProject> (<http://www.digitalproviderProject.com#hasProject>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#hasProject> "A property used to associate a customer with the digital transformation project they are involved in."@en)
+SubObjectPropertyOf(<http://www.digitalproviderProject.com#hasProject> owl:topObjectProperty)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.digitalproviderProject.com#customerName> (<http://www.digitalproviderProject.com#customerName>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#customerName> "A data property used to specify the name of a customer, which can be an individual, organization, or community entity."@en)
+SubDataPropertyOf(<http://www.digitalproviderProject.com#customerName> owl:topDataProperty)
+
+# Data Property: <http://www.digitalproviderProject.com#productName> (<http://www.digitalproviderProject.com#productName>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#productName> "A data property used to indicate the name of a specific technology product offered by a digital provider."@en)
+SubDataPropertyOf(<http://www.digitalproviderProject.com#productName> owl:topDataProperty)
+
+# Data Property: <http://www.digitalproviderProject.com#projectName> (<http://www.digitalproviderProject.com#projectName>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#projectName> "A data property used to define the title or name of a digital transformation project associated with a provider and customer."@en)
+SubDataPropertyOf(<http://www.digitalproviderProject.com#projectName> owl:topDataProperty)
+
+# Data Property: <http://www.digitalproviderProject.com#providerName> (<http://www.digitalproviderProject.com#providerName>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#providerName> "A data property used to describe the name of a digital provider responsible for creating or distributing technology products."@en)
+SubDataPropertyOf(<http://www.digitalproviderProject.com#providerName> owl:topDataProperty)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.digitalproviderProject.com#Agri> (<http://www.digitalproviderProject.com#Agri>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Agri> "A subclass of TechCat referring to agricultural technologies."@en)
+SubClassOf(<http://www.digitalproviderProject.com#Agri> <http://www.digitalproviderProject.com#TechCat>)
+
+# Class: <http://www.digitalproviderProject.com#Business> (<http://www.digitalproviderProject.com#Business>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Business> "A subclass of TechCat representing technologies designed to support business operations"@en)
+SubClassOf(<http://www.digitalproviderProject.com#Business> <http://www.digitalproviderProject.com#TechCat>)
+
+# Class: <http://www.digitalproviderProject.com#Community> (<http://www.digitalproviderProject.com#Community>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Community> "A class representing a group or collective entity, such as community enterprises or local cooperatives, that acts as a customer of digital products or services."@en)
+SubClassOf(<http://www.digitalproviderProject.com#Community> <http://www.digitalproviderProject.com#Customer>)
+
+# Class: <http://www.digitalproviderProject.com#Customer> (<http://www.digitalproviderProject.com#Customer>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Customer> "A class representing recipients of digital services, including individuals, businesses, or communities that benefit from technology adoption."@en)
+EquivalentClasses(<http://www.digitalproviderProject.com#Customer> ObjectSomeValuesFrom(<http://www.digitalproviderProject.com#buyProduct> <http://www.digitalproviderProject.com#TechProduct>))
+EquivalentClasses(<http://www.digitalproviderProject.com#Customer> ObjectSomeValuesFrom(<http://www.digitalproviderProject.com#hasProject> <http://www.digitalproviderProject.com#Project>))
+
+# Class: <http://www.digitalproviderProject.com#DigitalProvider> (<http://www.digitalproviderProject.com#DigitalProvider>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#DigitalProvider> "A class for individuals or organizations that create and offer digital technology products or services."@en)
+EquivalentClasses(<http://www.digitalproviderProject.com#DigitalProvider> ObjectSomeValuesFrom(<http://www.digitalproviderProject.com#hasProduct> <http://www.digitalproviderProject.com#TechProduct>))
+EquivalentClasses(<http://www.digitalproviderProject.com#DigitalProvider> ObjectSomeValuesFrom(<http://www.digitalproviderProject.com#hasProject> <http://www.digitalproviderProject.com#Project>))
+
+# Class: <http://www.digitalproviderProject.com#Edu> (<http://www.digitalproviderProject.com#Edu>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Edu> "A subclass of TechCat focused on educational technologies"@en)
+SubClassOf(<http://www.digitalproviderProject.com#Edu> <http://www.digitalproviderProject.com#TechCat>)
+
+# Class: <http://www.digitalproviderProject.com#Entertain> (<http://www.digitalproviderProject.com#Entertain>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Entertain> "A subclass of TechCat that refers to technologies used for entertainment purposes"@en)
+SubClassOf(<http://www.digitalproviderProject.com#Entertain> <http://www.digitalproviderProject.com#TechCat>)
+
+# Class: <http://www.digitalproviderProject.com#Farmer> (<http://www.digitalproviderProject.com#Farmer>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Farmer> "A subclass of Customer denoting individuals or groups in agriculture who utilize digital solutions to enhance farming efficiency."@en)
+SubClassOf(<http://www.digitalproviderProject.com#Farmer> <http://www.digitalproviderProject.com#Customer>)
+
+# Class: <http://www.digitalproviderProject.com#Med> (<http://www.digitalproviderProject.com#Med>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Med> "A subclass of TechCat for medical and healthcare-related technologies."@en)
+SubClassOf(<http://www.digitalproviderProject.com#Med> <http://www.digitalproviderProject.com#TechCat>)
+
+# Class: <http://www.digitalproviderProject.com#Private> (<http://www.digitalproviderProject.com#Private>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Private> "A subclass of Customer for private sector clients including individuals and companies seeking commercial technology solutions."@en)
+SubClassOf(<http://www.digitalproviderProject.com#Private> <http://www.digitalproviderProject.com#Customer>)
+DisjointClasses(<http://www.digitalproviderProject.com#Private> <http://www.digitalproviderProject.com#Public>)
+
+# Class: <http://www.digitalproviderProject.com#Project> (<http://www.digitalproviderProject.com#Project>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Project> "A class representing a set of tasks involving specific customers and technologies, designed to achieve a particular goal or outcome. Projects may vary in scope, such as implementing smart city solutions in different areas."@en)
+
+# Class: <http://www.digitalproviderProject.com#Public> (<http://www.digitalproviderProject.com#Public>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Public> "A subclass of Customer referring to public sector or government agencies that implement digital initiatives.")
+SubClassOf(<http://www.digitalproviderProject.com#Public> <http://www.digitalproviderProject.com#Customer>)
+
+# Class: <http://www.digitalproviderProject.com#SME> (<http://www.digitalproviderProject.com#SME>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#SME> "A subclass of Customer representing small and medium enterprises using digital technologies for business operations."@en)
+SubClassOf(<http://www.digitalproviderProject.com#SME> <http://www.digitalproviderProject.com#Customer>)
+
+# Class: <http://www.digitalproviderProject.com#TechCat> (<http://www.digitalproviderProject.com#TechCat>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#TechCat> "A class representing the category of technology, used to classify digital technologies into distinct groups based on their application domains such as education, business, or agriculture."@en)
+EquivalentClasses(<http://www.digitalproviderProject.com#TechCat> ObjectSomeValuesFrom(<http://www.digitalproviderProject.com#hasProduct> <http://www.digitalproviderProject.com#TechProduct>))
+
+# Class: <http://www.digitalproviderProject.com#TechProduct> (<http://www.digitalproviderProject.com#TechProduct>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#TechProduct> "A class that represents specific digital products developed by providers, such as mobile apps, IoT devices, or AR/VR systems."@en)
+EquivalentClasses(<http://www.digitalproviderProject.com#TechProduct> ObjectSomeValuesFrom(<http://www.digitalproviderProject.com#developedBy> <http://www.digitalproviderProject.com#DigitalProvider>))
+EquivalentClasses(<http://www.digitalproviderProject.com#TechProduct> ObjectSomeValuesFrom(<http://www.digitalproviderProject.com#hasCategory> <http://www.digitalproviderProject.com#TechCat>))
+
+# Class: <http://www.digitalproviderProject.com#Travel> (<http://www.digitalproviderProject.com#Travel>)
+
+AnnotationAssertion(rdfs:comment <http://www.digitalproviderProject.com#Travel> "A subclass of TechCat for technologies supporting tourism and travel services"@en)
+SubClassOf(<http://www.digitalproviderProject.com#Travel> <http://www.digitalproviderProject.com#TechCat>)
+
+
+DisjointClasses(<http://www.digitalproviderProject.com#Agri> <http://www.digitalproviderProject.com#Business> <http://www.digitalproviderProject.com#Edu> <http://www.digitalproviderProject.com#Entertain> <http://www.digitalproviderProject.com#Med> <http://www.digitalproviderProject.com#Travel>)
+DisjointClasses(<http://www.digitalproviderProject.com#Community> <http://www.digitalproviderProject.com#Farmer> <http://www.digitalproviderProject.com#Private> <http://www.digitalproviderProject.com#Public> <http://www.digitalproviderProject.com#SME>)
+DisjointClasses(<http://www.digitalproviderProject.com#Customer> <http://www.digitalproviderProject.com#DigitalProvider> <http://www.digitalproviderProject.com#Project> <http://www.digitalproviderProject.com#TechCat> <http://www.digitalproviderProject.com#TechProduct>)
+)

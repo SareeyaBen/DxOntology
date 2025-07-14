@@ -1,0 +1,1032 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.dxproject.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.dxproject.com">
+    <Prefix name="" IRI="http://www.dxproject.com"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="www" IRI="http://www.dxproject.com#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">An ontology designed to represent, manage, and query knowledge related to digital transformation (DX) projects.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Budget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DXDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DXPhase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DXProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalProvider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalTransformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digitalization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digitization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DxResourceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environmental"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Financial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Informational"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Innovation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KPI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectDetail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResultProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDigitalProvider"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOngoingProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPostProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProjectDetail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProjectResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTechCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTechProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCategoryOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCurrentlyInPhase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDetailOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDimensionOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isKPIOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPostProjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPreProjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProductOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProviderOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResourceOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResultOfProject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#digitalTransformationExplanation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#digitalizationExplanation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#digitizationExplanation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dimensionDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isProjectResult"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kpiName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kpiValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#postProjectMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#preProjectMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#projectName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#providerName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#techCategoryName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DroneYalaProject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DroneYalaProjectResult"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#DXDimension"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDimensionOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXPhase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOngoingProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDimension"/>
+            <Class IRI="#DXDimension"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasProjectDetail"/>
+            <Class IRI="#ProjectDetail"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasKPI"/>
+            <Class IRI="#KPI"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasResource"/>
+            <Class IRI="#ResultProject"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTechProduct"/>
+            <Class IRI="#TechCategory"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasDigitalProvider"/>
+            <Class IRI="#DigitalProvider"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProjectResult"/>
+            <Class IRI="#ResultProject"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTechCategory"/>
+            <Class IRI="#TechCategory"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isCurrentlyInPhase"/>
+            <Class IRI="#DXPhase"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPostProject"/>
+            <Class IRI="#PreProject"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DXProject"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPreProject"/>
+            <Class IRI="#PostProject"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DigitalProvider"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isProviderOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DxResourceType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isResourceOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#KPI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isKPIOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PostProject"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isPostProjectOf"/>
+            <Class IRI="#DXProject"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PreProject"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isPreProjectOf"/>
+            <Class IRI="#DXProject"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProjectDetail"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDetailOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ResultProject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isResultOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TechCategory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isCategoryOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TechProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isProductOfProject"/>
+            <Class IRI="#DXProject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Budget"/>
+        <Class IRI="#ProjectDetail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cultural"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalTransformation"/>
+        <Class IRI="#DXPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digitalization"/>
+        <Class IRI="#DXPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digitization"/>
+        <Class IRI="#DXPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environmental"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Financial"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Informational"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Innovation"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#ProjectDetail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#ProjectDetail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participative"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quality"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structural"/>
+        <Class IRI="#DXDimension"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Budget"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cultural"/>
+        <Class IRI="#Environmental"/>
+        <Class IRI="#Financial"/>
+        <Class IRI="#Informational"/>
+        <Class IRI="#Innovation"/>
+        <Class IRI="#Participative"/>
+        <Class IRI="#Quality"/>
+        <Class IRI="#Security"/>
+        <Class IRI="#Structural"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DXDimension"/>
+        <Class IRI="#DXPhase"/>
+        <Class IRI="#DXProject"/>
+        <Class IRI="#DigitalProvider"/>
+        <Class IRI="#DxResourceType"/>
+        <Class IRI="#KPI"/>
+        <Class IRI="#PostProject"/>
+        <Class IRI="#PreProject"/>
+        <Class IRI="#ProjectDetail"/>
+        <Class IRI="#ResultProject"/>
+        <Class IRI="#TechProduct"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DXProject"/>
+        <Class IRI="#DigitalProvider"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DXProject"/>
+        <Class IRI="#TechCategory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DigitalTransformation"/>
+        <Class IRI="#Digitalization"/>
+        <Class IRI="#Digitization"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#TechProduct"/>
+        <NamedIndividual IRI="#Drone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DXProject"/>
+        <NamedIndividual IRI="#DroneYalaProject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DigitalTransformation"/>
+        <NamedIndividual IRI="#DroneYalaProject"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTechProduct"/>
+        <NamedIndividual IRI="#DroneYalaProject"/>
+        <NamedIndividual IRI="#Drone"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <NamedIndividual IRI="#DroneYalaProjectResult"/>
+        <Literal>Success</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDigitalProvider"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDimension"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasKPI"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOngoingProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPostProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPreProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProjectDetail"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProjectResult"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResource"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTechCategory"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTechProduct"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCategoryOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCurrentlyInPhase"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDetailOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDimensionOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isKPIOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPostProjectOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPreProjectOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProductOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProviderOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isResourceOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isResultOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#digitalTransformationExplanation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#digitalizationExplanation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#digitizationExplanation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dimensionDescription"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#endDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isProjectResult"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#kpiName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#kpiValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#postProjectMethod"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#preProjectMethod"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#productName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#startDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#techCategoryName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#digitalTransformationExplanation"/>
+        <Class IRI="#DigitalTransformation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#digitalizationExplanation"/>
+        <Class IRI="#Digitalization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#digitizationExplanation"/>
+        <Class IRI="#Digitalization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dimensionDescription"/>
+        <Class IRI="#DXDimension"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endDate"/>
+        <Class IRI="#ProjectDetail"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isProjectResult"/>
+        <Class IRI="#ResultProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kpiName"/>
+        <Class IRI="#KPI"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kpiValue"/>
+        <Class IRI="#KPI"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#postProjectMethod"/>
+        <Class IRI="#PostProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preProjectMethod"/>
+        <Class IRI="#PreProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productName"/>
+        <Class IRI="#TechProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#projectName"/>
+        <Class IRI="#DXProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#providerName"/>
+        <Class IRI="#DigitalProvider"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#techCategoryName"/>
+        <Class IRI="#TechCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#ProjectDetail"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#projectName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#providerName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Budget</IRI>
+        <Literal xml:lang="en">This class represents the financial allocation for a DX project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cultural</IRI>
+        <Literal xml:lang="en">This class represents the Cultural Dimension, emphasizing values and behaviors that support technology acceptance and adoption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DXDimension</IRI>
+        <Literal xml:lang="en">This class defines the various dimensions that must be considered when implementing a DX project. Each dimension reflects a critical factor that contributes to the project&apos;s success.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DXPhase</IRI>
+        <Literal xml:lang="en">This class defines the key phases of a Digital Transformation (DX) project. It includes the progression from digitization to digitalization and digital transformation, representing different levels of maturity in the transformation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DXProject</IRI>
+        <Literal xml:lang="en">This class represents a Digital Transformation (DX) project and serves as the core entity of the ontology, linking together various interconnected classes that define the key components, processes, and stakeholders involved in digital transformation initiatives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DigitalProvider</IRI>
+        <Literal xml:lang="en">This class represents organizations, companies, or service providers that deliver digital solutions, platforms, or technologies in a DX project. A Digital Provider may supply software, hardware, cloud services, or consultation as part of the transformation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DigitalTransformation</IRI>
+        <Literal xml:lang="en">This class represents the final and most advanced phase of DX, where digital technologies fundamentally reshape organizational models, operations, and customer interactions. It goes beyond process improvement to redefine how organizations function, with examples such as AI-driven decision-making, digital service delivery, and blockchain-enabled systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Digitalization</IRI>
+        <Literal xml:lang="en">This class refers to initial phase of DX, focusing on converting analog or physical data into digital form. This includes actions like scanning paper documents, converting handwritten records, or using electronic files instead of printed ones. While digitization changes the data format, it does not alter the underlying business processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Digitization</IRI>
+        <Literal xml:lang="en">This class refers to Digitalization phase in which digital technologies are applied to improve and optimize existing business processes. Unlike digitization, this stage involves automation and system integration to enhance efficiency. Examples include cloud-based accounting, CRM tools, and automated supply chain management.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DxResourceType</IRI>
+        <Literal xml:lang="en">This class defines the types of resources utilized in a DX project, which may include various file formats such as PDF, Word documents, spreadsheets, images, and videos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Environmental</IRI>
+        <Literal xml:lang="en">This class represents the Environmental Dimension, which includes external factors like policies, trends, and resources that influence digital adoption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Financial</IRI>
+        <Literal xml:lang="en">This class represents the Financial Dimension, focusing on budgeting, cost management, and measuring ROI in digital transformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Informational</IRI>
+        <Literal xml:lang="en">This class represents the Informational Dimension, focusing on managing data to support decision-making with accuracy, security, and accessibility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Innovation</IRI>
+        <Literal xml:lang="en">This class represents the Innovation Dimension, involving new technologies and digital solutions like AI and automation to improve performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KPI</IRI>
+        <Literal xml:lang="en">This class describes Key Performance Indicators (KPIs) used to measure and evaluate the success or progress of a DX project based on predefined targets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en">This class specifies the geographic or administrative area where the DX project is implemented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en">This class identifies the organization responsible for initiating, managing, or supporting the DX project, such as a government agency, private company, or educational institution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Participative</IRI>
+        <Literal xml:lang="en">This class represents the Participative Dimension, focusing on collaboration, user feedback, and stakeholder involvement in digital change.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PostProject</IRI>
+        <Literal xml:lang="en">This class contains information and activities that take place after the completion of a DX project, such as evaluation, knowledge capturing, sustainability planning, and long-term impact assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PreProject</IRI>
+        <Literal xml:lang="en">This class represents the pre-project phase of a DX initiative, capturing information and activities that occur before the formal implementation of digital transformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProjectDetail</IRI>
+        <Literal xml:lang="en">This class captures the operational and contextual information of a DX project, including associated organization, project budget, and location where the project takes place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quality</IRI>
+        <Literal xml:lang="en">This class represents the Quality Dimension, aiming to improve efficiency, user experience, and compliance through digital tools.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResultProject</IRI>
+        <Literal xml:lang="en">This class describes the outcomes, or achieved results of a DX project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Security</IRI>
+        <Literal xml:lang="en">This class represents the Security Dimension, covering IT, data, and human security to protect digital assets from threats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Structural</IRI>
+        <Literal xml:lang="en">This class represents the Structural Dimension, focusing on how an organization adapts its structure, processes, and workforce to support digital change and improve efficiency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TechCategory</IRI>
+        <Literal xml:lang="en">This class defines the category or domain of technologies used in DX projects, such as agriculture, tourism, and healthcare.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TechProduct</IRI>
+        <Literal xml:lang="en">This class represents the specific digital tools, platforms, or systems applied in a DX project, such as software applications, data platforms, or cloud-based services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#digitalTransformationExplanation</IRI>
+        <Literal xml:lang="en">A textual explanation describing how digital transformation was implemented in the project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#digitalizationExplanation</IRI>
+        <Literal xml:lang="en">A textual explanation describing how Digitalization was implemented in the project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#digitizationExplanation</IRI>
+        <Literal xml:lang="en">A textual explanation describing how Digitization was implemented in the project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dimensionDescription</IRI>
+        <Literal xml:lang="en">A description of the specific DX dimension involved, such as security, cultural, or innovation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endDate</IRI>
+        <Literal xml:lang="en">The completion date of the digital transformation project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDigitalProvider</IRI>
+        <Literal xml:lang="en">Links a DXProject to the DigitalProvider responsible for delivering digital technologies, platforms, or services used in the project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDimension</IRI>
+        <Literal xml:lang="en">Links a DXProject to its related transformation dimensions (e.g., Cultural, Security, Innovation), allowing analysis of the aspects impacted by the project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasKPI</IRI>
+        <Literal xml:lang="en">Connects a DXProject to its defined Key Performance Indicators (KPIs), enabling evaluation of project success and goal alignment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOngoingProject</IRI>
+        <Literal xml:lang="en">The inverse property to isCurrentlyInPhase – all subproperties and attributes of the property should reflect those under isCurrentlyInPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPostProject</IRI>
+        <Literal xml:lang="en">Associates a DXProject with activities or data collected after the transformation has occurred, supporting post-implementation analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPreProject</IRI>
+        <Literal xml:lang="en">Links a DXProject to contextual or preparatory information that exists prior to digital transformation, useful for baseline comparisons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProjectDetail</IRI>
+        <Literal xml:lang="en">Connects a DXProject to specific operational details such as budget, location, and involved organizations, facilitating project documentation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProjectResult</IRI>
+        <Literal xml:lang="en">Relates a DXProject to its outcomes or measurable results after implementation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasResource</IRI>
+        <Literal xml:lang="en">Links a DXProject to the different types of resources it utilizes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTechCategory</IRI>
+        <Literal xml:lang="en">Connects a DXProject to the broader technology domain it applies to, such as agriculture, healthcare, or tourism, enabling sector-specific insights.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTechProduct</IRI>
+        <Literal xml:lang="en">Associates a DXProject with the specific digital tools or products used in implementation, such as software, platforms, or devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCategoryOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasTechCategory – all subproperties and attributes of the property should reflect those under hasTechCategory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCurrentlyInPhase</IRI>
+        <Literal xml:lang="en">Indicates the present phase of a DXProject (e.g., Digitization, Digitalization, Digital Transformation), useful for tracking project progress.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDetailOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasProjectDetail – all subproperties and attributes of the property should reflect those under hasProjectDetail.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDimensionOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasDimension – all subproperties and attributes of the property should reflect those under hasDimension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isKPIOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasKPI – all subproperties and attributes of the property should reflect those under hasKPI.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPostProjectOf</IRI>
+        <Literal xml:lang="en">The inverse property to hasPostProject – all subproperties and attributes of the property should reflect those under hasPostProject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPreProjectOf</IRI>
+        <Literal xml:lang="en">The inverse property to hasPreProject – all subproperties and attributes of the property should reflect those under hasPreProject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProductOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasTechProduct – all subproperties and attributes of the property should reflect those under hasTechProduct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProjectResult</IRI>
+        <Literal xml:lang="en">Represents whether the project outcome was successful or not, supporting evaluation of digital transformation results.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProviderOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasDigitalProvider – all subproperties and attributes of the property should reflect those under hasDigitalProvider.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isResourceOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasResource – all subproperties and attributes of the property should reflect those under hasResource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isResultOfProject</IRI>
+        <Literal xml:lang="en">The inverse property to hasProjectResult – all subproperties and attributes of the property should reflect those under hasProjectResult.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kpiName</IRI>
+        <Literal xml:lang="en">The name of the Key Performance Indicator (KPI) used to evaluate project success.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kpiValue</IRI>
+        <Literal xml:lang="en">The numerical or qualitative value assigned to the KPI after project evaluation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#postProjectMethod</IRI>
+        <Literal xml:lang="en">A brief description of the methods or systems used after implementing digital transformation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#preProjectMethod</IRI>
+        <Literal xml:lang="en">A brief description of the methods or systems used before implementing digital transformation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#productName</IRI>
+        <Literal xml:lang="en">The name of the digital product used or developed during the project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#projectName</IRI>
+        <Literal xml:lang="en">The official name or title of the digital transformation project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#providerName</IRI>
+        <Literal xml:lang="en">The name of the digital provider or vendor supporting the project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startDate</IRI>
+        <Literal xml:lang="en">The official start date of the digital transformation project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#techCategoryName</IRI>
+        <Literal xml:lang="en">The name of the technology domain involved, such as agriculture, tourism, or healthcare.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
