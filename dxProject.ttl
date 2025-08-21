@@ -1,0 +1,587 @@
+@prefix : <http://www.dxproject.com> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix www: <http://www.dxproject.com#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.dxproject.com> .
+
+<https://Dxonto.105app.site/Dx> rdf:type owl:Ontology ;
+                                 rdfs:comment "An ontology designed to represent, manage, and query knowledge related to digital transformation (DX) projects."@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://Dxonto.105app.site/Dx#hasDigitalProvider
+:hasDigitalProvider rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:comment "Links a DXProject to the DigitalProvider responsible for delivering digital technologies, platforms, or services used in the project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasDimension
+:hasDimension rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:comment "Links a DXProject to its related transformation dimensions (e.g., Cultural, Security, Innovation), allowing analysis of the aspects impacted by the project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasKPI
+:hasKPI rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:comment "Connects a DXProject to its defined Key Performance Indicators (KPIs), enabling evaluation of project success and goal alignment."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasOngoingProject
+:hasOngoingProject rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:comment "The inverse property to isCurrentlyInPhase – all subproperties and attributes of the property should reflect those under isCurrentlyInPhase"@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasPostProject
+:hasPostProject rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:comment "Associates a DXProject with activities or data collected after the transformation has occurred, supporting post-implementation analysis."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasPreProject
+:hasPreProject rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:comment "Links a DXProject to contextual or preparatory information that exists prior to digital transformation, useful for baseline comparisons."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasProjectDetail
+:hasProjectDetail rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:comment "Connects a DXProject to specific operational details such as budget, location, and involved organizations, facilitating project documentation."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasProjectResult
+:hasProjectResult rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:comment "Relates a DXProject to its outcomes or measurable results after implementation."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasResource
+:hasResource rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "Links a DXProject to the different types of resources it utilizes."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasTechCategory
+:hasTechCategory rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:comment "Connects a DXProject to the broader technology domain it applies to, such as agriculture, healthcare, or tourism, enabling sector-specific insights."@en .
+
+
+###  https://Dxonto.105app.site/Dx#hasTechProduct
+:hasTechProduct rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:comment "Associates a DXProject with the specific digital tools or products used in implementation, such as software, platforms, or devices."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isCategoryOfProject
+:isCategoryOfProject rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:comment "The inverse property to hasTechCategory – all subproperties and attributes of the property should reflect those under hasTechCategory."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isCurrentlyInPhase
+:isCurrentlyInPhase rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:comment "Indicates the present phase of a DXProject (e.g., Digitization, Digitalization, Digital Transformation), useful for tracking project progress."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isDetailOfProject
+:isDetailOfProject rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:comment "The inverse property to hasProjectDetail – all subproperties and attributes of the property should reflect those under hasProjectDetail."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isDimensionOfProject
+:isDimensionOfProject rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:comment "The inverse property to hasDimension – all subproperties and attributes of the property should reflect those under hasDimension."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isKPIOfProject
+:isKPIOfProject rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:comment "The inverse property to hasKPI – all subproperties and attributes of the property should reflect those under hasKPI."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isPostProjectOf
+:isPostProjectOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:comment "The inverse property to hasPostProject – all subproperties and attributes of the property should reflect those under hasPostProject."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isPreProjectOf
+:isPreProjectOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:comment "The inverse property to hasPreProject – all subproperties and attributes of the property should reflect those under hasPreProject."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isProductOfProject
+:isProductOfProject rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:comment "The inverse property to hasTechProduct – all subproperties and attributes of the property should reflect those under hasTechProduct."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isProviderOfProject
+:isProviderOfProject rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:comment "The inverse property to hasDigitalProvider – all subproperties and attributes of the property should reflect those under hasDigitalProvider."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isResourceOfProject
+:isResourceOfProject rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:comment "The inverse property to hasResource – all subproperties and attributes of the property should reflect those under hasResource."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isResultOfProject
+:isResultOfProject rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:comment "The inverse property to hasProjectResult – all subproperties and attributes of the property should reflect those under hasProjectResult."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain :ProjectDetail .
+
+
+###  https://Dxonto.105app.site/Dx#digitalTransformationExplanation
+:digitalTransformationExplanation rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                  rdfs:domain :DigitalTransformation ;
+                                  rdfs:comment "A textual explanation describing how digital transformation was implemented in the project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#digitalizationExplanation
+:digitalizationExplanation rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain :Digitalization ;
+                           rdfs:comment "A textual explanation describing how Digitalization was implemented in the project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#digitizationExplanation
+:digitizationExplanation rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain :Digitalization ;
+                         rdfs:comment "A textual explanation describing how Digitization was implemented in the project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#dimensionDescription
+:dimensionDescription rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :DXDimension ;
+                      rdfs:comment "A description of the specific DX dimension involved, such as security, cultural, or innovation."@en .
+
+
+###  https://Dxonto.105app.site/Dx#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :ProjectDetail ;
+         rdfs:comment "The completion date of the digital transformation project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#isProjectResult
+:isProjectResult rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :ResultProject ;
+                 rdfs:comment "Represents whether the project outcome was successful or not, supporting evaluation of digital transformation results."@en .
+
+
+###  https://Dxonto.105app.site/Dx#kpiName
+:kpiName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :KPI ;
+         rdfs:comment "The name of the Key Performance Indicator (KPI) used to evaluate project success."@en .
+
+
+###  https://Dxonto.105app.site/Dx#kpiValue
+:kpiValue rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :KPI ;
+          rdfs:comment "The numerical or qualitative value assigned to the KPI after project evaluation."@en .
+
+
+###  https://Dxonto.105app.site/Dx#postProjectMethod
+:postProjectMethod rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :PostProject ;
+                   rdfs:comment "A brief description of the methods or systems used after implementing digital transformation."@en .
+
+
+###  https://Dxonto.105app.site/Dx#preProjectMethod
+:preProjectMethod rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :PreProject ;
+                  rdfs:comment "A brief description of the methods or systems used before implementing digital transformation."@en .
+
+
+###  https://Dxonto.105app.site/Dx#productName
+:productName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :TechProduct ;
+             rdfs:comment "The name of the digital product used or developed during the project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#projectName
+:projectName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DXProject ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The official name or title of the digital transformation project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#providerName
+:providerName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :DigitalProvider ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The name of the digital provider or vendor supporting the project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:comment "The official start date of the digital transformation project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#techCategoryName
+:techCategoryName rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :TechCategory ;
+                  rdfs:comment "The name of the technology domain involved, such as agriculture, tourism, or healthcare."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://Dxonto.105app.site/Dx#Budget
+:Budget rdf:type owl:Class ;
+        rdfs:subClassOf :ProjectDetail ;
+        rdfs:comment "This class represents the financial allocation for a DX project"@en .
+
+
+###  https://Dxonto.105app.site/Dx#Cultural
+:Cultural rdf:type owl:Class ;
+          rdfs:subClassOf :DXDimension ;
+          rdfs:comment "This class represents the Cultural Dimension, emphasizing values and behaviors that support technology acceptance and adoption."@en .
+
+
+###  https://Dxonto.105app.site/Dx#DXDimension
+:DXDimension rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isDimensionOfProject ;
+                                   owl:someValuesFrom :DXProject
+                                 ] ;
+             rdfs:comment "This class defines the various dimensions that must be considered when implementing a DX project. Each dimension reflects a critical factor that contributes to the project's success."@en .
+
+
+###  https://Dxonto.105app.site/Dx#DXPhase
+:DXPhase rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasOngoingProject ;
+                               owl:someValuesFrom :DXProject
+                             ] ;
+         rdfs:comment "This class defines the key phases of a Digital Transformation (DX) project. It includes the progression from digitization to digitalization and digital transformation, representing different levels of maturity in the transformation process."@en .
+
+
+###  https://Dxonto.105app.site/Dx#DXProject
+:DXProject rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasDimension ;
+                                 owl:someValuesFrom :DXDimension
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasProjectDetail ;
+                                 owl:someValuesFrom :ProjectDetail
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasKPI ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :KPI
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasResource ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ResultProject
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTechProduct ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :TechCategory
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasDigitalProvider ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :DigitalProvider
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasProjectResult ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :ResultProject
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasTechCategory ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :TechCategory
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :isCurrentlyInPhase ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :DXPhase
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPostProject ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :PreProject
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPreProject ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :PostProject
+                               ] ;
+           owl:disjointWith :DigitalProvider ,
+                            :TechCategory ;
+           rdfs:comment "This class represents a Digital Transformation (DX) project and serves as the core entity of the ontology, linking together various interconnected classes that define the key components, processes, and stakeholders involved in digital transformation initiatives"@en .
+
+
+###  https://Dxonto.105app.site/Dx#DigitalProvider
+:DigitalProvider rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isProviderOfProject ;
+                                       owl:someValuesFrom :DXProject
+                                     ] ;
+                 rdfs:comment "This class represents organizations, companies, or service providers that deliver digital solutions, platforms, or technologies in a DX project. A Digital Provider may supply software, hardware, cloud services, or consultation as part of the transformation process."@en .
+
+
+###  https://Dxonto.105app.site/Dx#DigitalTransformation
+:DigitalTransformation rdf:type owl:Class ;
+                       rdfs:subClassOf :DXPhase ;
+                       rdfs:comment "This class represents the final and most advanced phase of DX, where digital technologies fundamentally reshape organizational models, operations, and customer interactions. It goes beyond process improvement to redefine how organizations function, with examples such as AI-driven decision-making, digital service delivery, and blockchain-enabled systems."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Digitalization
+:Digitalization rdf:type owl:Class ;
+                rdfs:subClassOf :DXPhase ;
+                rdfs:comment "This class refers to initial phase of DX, focusing on converting analog or physical data into digital form. This includes actions like scanning paper documents, converting handwritten records, or using electronic files instead of printed ones. While digitization changes the data format, it does not alter the underlying business processes."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Digitization
+:Digitization rdf:type owl:Class ;
+              rdfs:subClassOf :DXPhase ;
+              rdfs:comment "This class refers to Digitalization phase in which digital technologies are applied to improve and optimize existing business processes. Unlike digitization, this stage involves automation and system integration to enhance efficiency. Examples include cloud-based accounting, CRM tools, and automated supply chain management."@en .
+
+
+###  https://Dxonto.105app.site/Dx#DxResourceType
+:DxResourceType rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :isResourceOfProject ;
+                                      owl:someValuesFrom :DXProject
+                                    ] ;
+                rdfs:comment "This class defines the types of resources utilized in a DX project, which may include various file formats such as PDF, Word documents, spreadsheets, images, and videos."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Environmental
+:Environmental rdf:type owl:Class ;
+               rdfs:subClassOf :DXDimension ;
+               rdfs:comment "This class represents the Environmental Dimension, which includes external factors like policies, trends, and resources that influence digital adoption."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Financial
+:Financial rdf:type owl:Class ;
+           rdfs:subClassOf :DXDimension ;
+           rdfs:comment "This class represents the Financial Dimension, focusing on budgeting, cost management, and measuring ROI in digital transformation"@en .
+
+
+###  https://Dxonto.105app.site/Dx#Informational
+:Informational rdf:type owl:Class ;
+               rdfs:subClassOf :DXDimension ;
+               rdfs:comment "This class represents the Informational Dimension, focusing on managing data to support decision-making with accuracy, security, and accessibility."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Innovation
+:Innovation rdf:type owl:Class ;
+            rdfs:subClassOf :DXDimension ;
+            rdfs:comment "This class represents the Innovation Dimension, involving new technologies and digital solutions like AI and automation to improve performance."@en .
+
+
+###  https://Dxonto.105app.site/Dx#KPI
+:KPI rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :isKPIOfProject ;
+                           owl:someValuesFrom :DXProject
+                         ] ;
+     rdfs:comment "This class describes Key Performance Indicators (KPIs) used to measure and evaluate the success or progress of a DX project based on predefined targets"@en .
+
+
+###  https://Dxonto.105app.site/Dx#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :ProjectDetail ;
+          rdfs:comment "This class specifies the geographic or administrative area where the DX project is implemented"@en .
+
+
+###  https://Dxonto.105app.site/Dx#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf :ProjectDetail ;
+              rdfs:comment "This class identifies the organization responsible for initiating, managing, or supporting the DX project, such as a government agency, private company, or educational institution"@en .
+
+
+###  https://Dxonto.105app.site/Dx#Participative
+:Participative rdf:type owl:Class ;
+               rdfs:subClassOf :DXDimension ;
+               rdfs:comment "This class represents the Participative Dimension, focusing on collaboration, user feedback, and stakeholder involvement in digital change."@en .
+
+
+###  https://Dxonto.105app.site/Dx#PostProject
+:PostProject rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isPostProjectOf ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :DXProject
+                                 ] ;
+             rdfs:comment "This class contains information and activities that take place after the completion of a DX project, such as evaluation, knowledge capturing, sustainability planning, and long-term impact assessment"@en .
+
+
+###  https://Dxonto.105app.site/Dx#PreProject
+:PreProject rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isPreProjectOf ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :DXProject
+                                ] ;
+            rdfs:comment "This class represents the pre-project phase of a DX initiative, capturing information and activities that occur before the formal implementation of digital transformation"@en .
+
+
+###  https://Dxonto.105app.site/Dx#ProjectDetail
+:ProjectDetail rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isDetailOfProject ;
+                                     owl:someValuesFrom :DXProject
+                                   ] ;
+               rdfs:comment "This class captures the operational and contextual information of a DX project, including associated organization, project budget, and location where the project takes place."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Quality
+:Quality rdf:type owl:Class ;
+         rdfs:subClassOf :DXDimension ;
+         rdfs:comment "This class represents the Quality Dimension, aiming to improve efficiency, user experience, and compliance through digital tools."@en .
+
+
+###  https://Dxonto.105app.site/Dx#ResultProject
+:ResultProject rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isResultOfProject ;
+                                     owl:someValuesFrom :DXProject
+                                   ] ;
+               rdfs:comment "This class describes the outcomes, or achieved results of a DX project."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Security
+:Security rdf:type owl:Class ;
+          rdfs:subClassOf :DXDimension ;
+          rdfs:comment "This class represents the Security Dimension, covering IT, data, and human security to protect digital assets from threats."@en .
+
+
+###  https://Dxonto.105app.site/Dx#Structural
+:Structural rdf:type owl:Class ;
+            rdfs:subClassOf :DXDimension ;
+            rdfs:comment "This class represents the Structural Dimension, focusing on how an organization adapts its structure, processes, and workforce to support digital change and improve efficiency."@en .
+
+
+###  https://Dxonto.105app.site/Dx#TechCategory
+:TechCategory rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isCategoryOfProject ;
+                                    owl:someValuesFrom :DXProject
+                                  ] ;
+              rdfs:comment "This class defines the category or domain of technologies used in DX projects, such as agriculture, tourism, and healthcare."@en .
+
+
+###  https://Dxonto.105app.site/Dx#TechProduct
+:TechProduct rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :isProductOfProject ;
+                                   owl:someValuesFrom :DXProject
+                                 ] ;
+             rdfs:comment "This class represents the specific digital tools, platforms, or systems applied in a DX project, such as software applications, data platforms, or cloud-based services."@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://Dxonto.105app.site/Dx#Drone
+:Drone rdf:type owl:NamedIndividual ,
+                :TechProduct .
+
+
+###  https://Dxonto.105app.site/Dx#DroneYalaProject
+:DroneYalaProject rdf:type owl:NamedIndividual ,
+                           :DXProject ,
+                           :DigitalTransformation ;
+                  :hasTechProduct :Drone .
+
+
+###  https://Dxonto.105app.site/Dx#DroneYalaProjectResult
+:DroneYalaProjectResult rdf:type owl:NamedIndividual ;
+                        owl:topDataProperty "Success" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Budget
+                :Location
+                :Organization
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cultural
+                :Environmental
+                :Financial
+                :Informational
+                :Innovation
+                :Participative
+                :Quality
+                :Security
+                :Structural
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DXDimension
+                :DXPhase
+                :DXProject
+                :DigitalProvider
+                :DxResourceType
+                :KPI
+                :PostProject
+                :PreProject
+                :ProjectDetail
+                :ResultProject
+                :TechProduct
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DigitalTransformation
+                :Digitalization
+                :Digitization
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.dxproject.com"
+     xml:base="https://Dxonto.105app.site/Dx"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.dxproject.com">
+     ontologyIRI="https://Dxonto.105app.site/Dx">
     <Prefix name="" IRI="http://www.dxproject.com"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -637,6 +637,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#ProjectDetail"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#digitalTransformationExplanation"/>
         <Class IRI="#DigitalTransformation"/>
     </DataPropertyDomain>
@@ -691,10 +695,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#techCategoryName"/>
         <Class IRI="#TechCategory"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class IRI="#ProjectDetail"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#projectName"/>
